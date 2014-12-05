@@ -5,19 +5,39 @@
 	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700' rel='stylesheet' type='text/css'>
-	
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 	<div id="top-border"></div>
-	<div id="navigation">
-		<ul id="top-nav">
-			<li id="nav-logo"></li>
-			<li id="nav-chicken">The Good Chicken</li>
-			<li id="nav-donate">Why Donate?</li>
-			<li id="nav-about">About Us</li>
-			<li id="social"><a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/header-dontateNow.jpg" /></a>&nbsp;<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://goodsforgood.org" border="0"><img src="images/header-facebook.jpg" /></a><a href="http://www.twitter.com/share?url=http://goodsforgood.org" target="_blank" border="0"><img src="images/header-twitter.jpg" /></a></li>
-		</ul>
-	</div>
+	
+	<nav id="navigation" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html" id="nav-logo"></a>
+	    </div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul id="top-nav">
+				<!-- <li id="nav-logo"></li> -->
+				<li id="nav-chicken">The Good Chicken</li>
+				<li id="nav-donate">Why Donate?</li>
+				<li id="nav-about">About Us</li>
+				<li id="social"><a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/header-dontateNow.jpg" /></a>&nbsp;<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://goodsforgood.org" border="0"><img src="images/header-facebook.jpg" /></a><a href="http://www.twitter.com/share?url=http://goodsforgood.org" target="_blank" border="0"><img src="images/header-twitter.jpg" /></a></li>
+			</ul>
+		</div>	
+	</div>	
+	</nav>
+
+
 	<div id="page">
 		
 		<div id="hero-bg"><div id="hero"><br><br><br><br><a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/hero_temp.jpg" /></a></div></div>
@@ -41,5 +61,6 @@ $("#nav-donate").click(function(){goToByScroll("donate");});
 $("#nav-about").click(function(){goToByScroll("about");});
 $('img').bind('dragstart', function(event) { event.preventDefault(); });
 </script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
 </body>
 </html>
