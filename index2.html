@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Goods for Good</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="top-border"></div>
+	<div id="navigation">
+		<ul id="top-nav">
+			<li id="nav-logo"></li>
+			<li id="nav-chicken">The Good Chicken</li>
+			<li id="nav-donate">Why Donate?</li>
+			<li id="nav-about">About Us</li>
+			<li id="social"><a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/header-dontateNow.jpg" /></a>&nbsp;<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://goodsforgood.org" border="0"><img src="images/header-facebook.jpg" /></a><a href="http://www.twitter.com/share?url=http://goodsforgood.org" target="_blank" border="0"><img src="images/header-twitter.jpg" /></a></li>
+		</ul>
+	</div>
+	<div id="page">
+		
+		<div id="hero-bg"><div id="hero"><br><br><br><br><img src="images/hero_temp.jpg" /></div></div>
+		<div class="mid-border"><div class="mid-arrow"></div></div>
+		<div id="chicken-bg"><div id="chicken"><img src="images/chicken_temp.jpg" /></div></div>
+		<div class="mid-border"><div class="mid-arrow"></div></div>
+		<div id="donate-bg"><div id="donate"><br><br><br><br><a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/donate_temp.jpg" /></div></a></div>
+		<div id="about-bg"><div id="about"><br><br><br><br><img src="images/about_temp.jpg" /></div></div>
+		<div class="bottom-border"></div>
+		<div id="footer-bg"><div id="footer">Copyright 2012. Site design by <span class="boldFont">Ten Twenty-Five LLC</span></div></div>
+
+	</div>
+<script src="js/jquery.min.js"></script> 
+<script>
+function goToByScroll(id){
+	var headerHeight = -80
+	 $('html,body').animate({scrollTop: $("#"+id).offset().top + headerHeight},'slow');
+}
+$("#nav-chicken").click(function(){goToByScroll("chicken");});
+$("#nav-donate").click(function(){goToByScroll("donate");});
+$("#nav-about").click(function(){goToByScroll("about");});
+</script>
+</body>
+</html>

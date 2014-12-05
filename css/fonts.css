@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: Clarendon;
+	src: url('../webfontkit/clarendon-webfont.ttf');
+}
+@font-face {
+	font-family: Clarendon-Light;
+	src: url('../webfontkit/clarendonlig-webfont.ttf');
+}
+@font-face {
+	font-family: Clarendon-Bold;
+	src: url('../webfontkit/clarendon_bold-webfont.ttf');
+}
