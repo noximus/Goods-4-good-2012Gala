@@ -73,6 +73,7 @@
 		background: url("../images/logo.png");
 		width: 228px;
 		height: 45px;
+		float: left;
 	}
 	#nav-chicken{
 		margin-left:80px; 
@@ -92,6 +93,9 @@
 	}
 	#social{
 		margin-top: 15px;
+	}
+	#social a{
+		float: left;
 	}
 	#hero-bg{
 		width: 100%;
