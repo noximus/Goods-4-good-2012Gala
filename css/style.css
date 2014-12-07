@@ -122,12 +122,12 @@
 		margin: 0 auto;
 		background:#0dc0b1;
 	}
-	#donate-bg{
+	.donate-bg{
 		width: 100%;
 		background:#f7f5e9;
 	}
 	#donate{
-		width: 960px;
+		/*width: 960px;*/
 		height: 783px;
 		position: relative;
 		margin: 0 auto;
