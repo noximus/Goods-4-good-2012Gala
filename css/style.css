@@ -1,4 +1,4 @@
-@media (min-width: 1020px){
+/*@media (min-width: 1020px){*/
 	body{
 		margin: 0;
 	}
@@ -79,16 +79,19 @@
 		margin-top:41px; 
 		width: 168px;
 		height: 45px;
+		display: block;
 	}
 	#nav-donate{
 		margin-top:41px; 
 		width: 128px;
 		height: 45px;
+		display: block;
 	}
 	#nav-about{
 		margin-top:41px; 
 		width: 128px;
 		height: 45px;
+		display: block;
 	}
 	#social{
 		margin-top: 15px;
@@ -101,19 +104,19 @@
 		width: 100%;
 		background:#fbfaf4;
 	}
-	#hero{
+	.hero{
 		width: 960px;
 		height: 505px;
 		position: relative;
 		margin: 0 auto;
 		background:#fbfaf4;
 	}
-	#chicken-bg{
+	.chicken-bg{
 		width: 100%;
 		background:#0dc0b1;
 	}
 	#chicken{
-		width: 960px;
+		/*width: 960px;*/
 		height: 519px;
 		position: relative;
 		margin: 0 auto;
@@ -157,7 +160,7 @@
 		margin: 0 auto;
 		background:#fbfaf4;
 	}
-}
+/*}*/
 
 
 
