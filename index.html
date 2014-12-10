@@ -2,10 +2,11 @@
 <head>
 	<title>Goods for Good</title>
 	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700' rel='stylesheet' type='text/css'>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +15,9 @@
 <body>
 	<div id="top-border"></div>
 
-
-	<nav class="navbar navbar-default" id="navigation" role="navigation">
-  <div class="container" id="top-nav">
+	
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -25,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html" id="nav-logo"></a>
+      <a class="navbar-brand navbar-right" href="index.html" id="nav-logo"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,33 +45,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-	
-	<!-- <nav class="navbar navbar-default" id="navigation" role="navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="index.html" id="nav-logo"></a>
-	    </div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul id="top-nav">
-				<li id="nav-logo"></li>
-				<li id="nav-chicken">The Good Chicken</li>
-				<li id="nav-donate">Why Donate?</li>
-				<li id="nav-about">About Us</li>
-				<li id="social">
-					<a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/header-dontateNow.jpg" /></a>&nbsp;
-					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://goodsforgood.org" border="0"><img src="images/header-facebook.jpg" /></a>
-					<a href="http://www.twitter.com/share?url=http://goodsforgood.org" target="_blank" border="0"><img src="images/header-twitter.jpg" /></a>
-				</li>
-			</ul>
-		</div>	
-	</div>	
-	</nav> -->
 
 
 	<div id="page" class="container">
@@ -79,27 +53,40 @@
 				<a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/hero_temp.jpg" class="img-responsive center-block"/></a>
 			</div>
 		</div>
-		<div class="mid-border"><div class="mid-arrow"></div></div>
+		<div class="row">
+			<div class="mid-border col-sm-12 col-md-12">
+				<div class="mid-arrow"></div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="chicken-bg col-sm-12 col-md-12" id="chicken"><img src="images/chicken_temp.jpg" class="img-responsive center-block" /></div>
 		</div>
-		<div class="mid-border">
-			<div class="mid-arrow"></div>
+		<div class="row">
+			<div class="mid-border col-sm-12 col-md-12">
+				<div class="mid-arrow"></div>
+			</div>
 		</div>
 		<div class="row">
 			<div id="donate" class="donate-bg col-sm-12 col-md-12"><a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/donate_temp.jpg" class="img-responsive center-block" /></a>
 			</div>
 		</div>
-		<div id="about-bg">
-			<div id="about"><br><br><br><br><a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/about_temp.jpg" /></a></div>
+		<div class="row">
+			<div id="about" class="about-bg col-sm-12 col-md-12"><a href="http://goodsforgood.org/index.php/donate/" border="0"><img src="images/about_temp.jpg" class="img-responsive center-block"/></a></div>
 		</div>
-		<div class="bottom-border"></div>
-		<div id="footer-bg">
-			<div id="footer">Copyright 2012. Site design by <span class="boldFont">Ten Twenty-Five LLC</span></div>
+		<div class="row">
+			<div class="bottom-border col-sm-12 col-md-12">
+			</div>
 		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12" id="footer-bg">
+				<div id="footer">Copyright 2012. Site design by <span class="boldFont">Ten Twenty-Five LLC</span></div>
+			</div>
+		</div>
+		
 
 	</div>
-<script src="js/jquery.min.js"></script> 
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script>
 function goToByScroll(id){
 	var headerHeight = -80
@@ -108,8 +95,8 @@ function goToByScroll(id){
 $("#nav-chicken").click(function(){goToByScroll("chicken");});
 $("#nav-donate").click(function(){goToByScroll("donate");});
 $("#nav-about").click(function(){goToByScroll("about");});
-$('img').bind('dragstart', function(event) { event.preventDefault(); });
+$('img').on('dragstart', function(event) { event.preventDefault(); });
 </script>
-<script type="text/javascript" src="bootstrap.min.js"></script>
+
 </body>
 </html>
